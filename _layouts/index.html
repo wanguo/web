@@ -1,0 +1,16 @@
+---
+layout: default
+---
+{% for post in site.posts  %}
+<div class="post">                  
+    <div class="post-entry">
+        <a href="{{ site.BASE_PATH }}{{ post.url }}" class="postlink"><img
+                src="{{ site.ASSET_PATH }}/{{ post.picurl }}"
+                alt="设计" width="300"/>
+        </a>
+        <div class="cf">
+            <a href="{{ site.BASE_PATH }}{{ post.url }}" title="布莱曼演唱会" class="postdate left">{{ post.title }}</a>
+        </div>
+    </div>    
+</div>
+{% endfor %}
