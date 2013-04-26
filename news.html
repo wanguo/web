@@ -1,0 +1,18 @@
+---
+layout: default
+title: "万国新闻"
+header: Posts By Category
+---
+
+<div style="padding:20px;">
+{% for category in site.categories %} 
+  {% if category[0] == "news" %}
+    <ul>
+    {% for node in category[1] %}
+      	<li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+{% endfor %}
+</div>
+

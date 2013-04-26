@@ -1,16 +1,35 @@
 ---
 layout: default
 ---
-{% for post in site.posts  %}
-<div class="post">                  
-    <div class="post-entry">
-        <a href="{{ site.BASE_PATH }}{{ post.url }}" class="postlink"><img
-                src="{{ site.ASSET_PATH }}/{{ post.picurl }}"
-                alt="设计" width="300"/>
-        </a>
-        <div class="cf">
-            <a href="{{ site.BASE_PATH }}{{ post.url }}" title="布莱曼演唱会" class="postdate left">{{ post.title }}</a>
-        </div>
-    </div>    
+<div id="info">
+	<ul>
+		<li><img src="/assets/images/arrow_up.jpg"></li>
+		<li><a href="#">演唱会运营</a></li>
+		<li><a href="#">影视投资</a></li>
+		<li><a href="#">媒体购买</a></li>
+		<li><a href="#">艺人管理</a></li>
+		<li class="bottom"><img src="/assets/images/arrow_down.jpg"></li>
+	</ul>
+	<div>万国国际文化发展有限公司是经文化厅批准成立的文化经营实体机构，是以演唱会运营、影视投资、艺人管理核心业务一体化的国际性传媒公司。</div>
 </div>
-{% endfor %}
+<div id="news">
+	<div id="news_head"><span style="color:red;">新闻</span><span> News</span><div class="more"><a href="#">更多<<</a></div></div>
+	<ul>
+		<li><a href="#">新闻新闻新闻新闻新闻新闻新闻</a></li>
+		<li><a href="#">新闻新闻新闻新闻新闻新闻</a></li>
+		<li><a href="#">新闻新闻新闻新闻新闻新闻新闻</a></li>
+		<li><a href="#">新闻新闻新闻新闻新闻新闻新闻新闻新闻</a></li>
+		<li><a href="#">新闻新闻新闻新闻新闻新闻新闻</a></li>
+		<li><a href="#">新闻新闻新闻新闻新闻</a></li>
+	</ul>
+</div>
+<div class="clear"></div>
+<div id="activity">
+	<div id="activity_head"><span>活动项目</span><div class="more"><a href="">+更多</a></div></div>
+	<ul>
+		<li><a href=""><img src="/assets/images/shuimu.jpg" /></a><div><a href="">水木年华生于70年代</a></div></li>
+		<li><a href=""><img src="/assets/images/tan.jpg" /></a><div><a href="">谭咏麟2013⋯⋯</a></div></li>
+		<li><a href=""><img src="/assets/images/shuimu.jpg" /></a><div><a href="">水木年华生于70年代</a></div></li>
+		<li><a href=""><img src="/assets/images/shuimu.jpg" /></a><div><a href="">水木年华生于70年代</a></div></li>
+	</ul>
+</div>
